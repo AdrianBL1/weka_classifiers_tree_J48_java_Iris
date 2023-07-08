@@ -21,7 +21,6 @@ public class Iris {
     // Método del controlador principal
     public static void main(String args[])
     {
- 
         // Try Catch para Intentar bloquear para buscar excepciones
         try {
  
@@ -48,16 +47,16 @@ public class Iris {
                 j48Classifier, datasetInstances, 10,
                 new Random(1));
             
-            //Sumarry Resultados
+            // Sumarry Resultados
             System.out.println(evaluation.toSummaryString("\nResultados", false));
             
-            //Detailed Accuracy By Class - Resultados de los detalles de las Clases
+            // Detailed Accuracy By Class - Resultados de los detalles de las Clases
             System.out.println(evaluation.toClassDetailsString());
             
-            //Matriz de confusión
+            // Matriz de confusión
             evaluation.confusionMatrix();
             
-            //Resultados
+            // Resultados
             System.out.println(evaluation.toMatrixString());
             
             
@@ -82,7 +81,6 @@ public class Iris {
  
         // Capturar el catch para comprobar si hay excepciones
         catch (Exception e) {
- 
             // Imprimir y mostrar el mensaje de la pantalla
             // usando el método getMessage()
             System.out.println("Se produjo un error!!! \n" + e.getMessage());
